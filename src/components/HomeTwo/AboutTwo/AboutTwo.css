@@ -1,0 +1,19 @@
+.homeTow-service-card .icon-w {
+  display: none;
+}
+.homeTow-service-card .icon-n {
+  display: block;
+}
+
+.homeTow-service-card:hover .icon-w {
+  display: block;
+}
+.homeTow-service-card:hover .icon-n {
+  display: none;
+}
+.homeTow-service-card p {
+  color: black;
+}
+.homeTow-service-card:hover p {
+  color: white;
+}

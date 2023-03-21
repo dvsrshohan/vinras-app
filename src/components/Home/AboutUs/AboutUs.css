@@ -1,0 +1,33 @@
+.home-about-card .about-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #f94d1c;
+  transition: all .40s ease-in-out;
+}
+.home-about-card:hover .about-icon {
+  background: #FFFFFF;
+}
+.home-about-card:hover .about-icon .icon-1{
+  display: block;
+}
+.home-about-card:hover .about-icon .icon-2{
+  display: none;
+}
+.home-about-card .about-icon .icon-1{
+  display: none;
+}
+.home-about-card .about-icon .icon-2{
+  display: block;
+}
+
+.home-about-card:hover h3 {
+  color: #FFFFFF;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #f94d1c;
+}
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #f94d1c;
+}

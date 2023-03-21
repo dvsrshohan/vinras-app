@@ -1,0 +1,27 @@
+.home-team-card {
+  position: relative;
+  transition: all .40s ease-in-out;
+}
+.home-team-card:hover img {
+  filter: brightness(60%);
+}
+.home-team-card .name-title {
+  position: absolute;
+  bottom: -30px;
+  left: 60px;
+  opacity: 0;
+}
+.home-team-card:hover .name-title {
+  bottom: 30px;
+  opacity: 1;
+}
+.home-team-card .home-team-social {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  opacity: 0;
+}
+.home-team-card:hover .home-team-social {
+  left: 40px;
+  opacity: 1;
+}

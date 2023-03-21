@@ -1,0 +1,264 @@
+.navbar-wrapper {
+  position: fixed;
+  z-index: 99;
+  padding: 20px 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.navbar-left-shape::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 17%;
+  height: 100%;
+  background-color: #f94d1c;
+  z-index: -1;
+}
+
+.navbar-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #f94d1c;
+  z-index: -1;
+}
+
+.navbar-wrapper::after {
+  content: "";
+  top: 0;
+  right: 0;
+  width: 16%;
+  height: 5px;
+  position: absolute;
+  background: #f94d1c;
+}
+
+/* / navbar social /  */
+li.nva-social-items {
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.nav-social-icon {
+  font-size: 18px;
+}
+
+.nva-social-items:hover {
+  transform: rotate(360deg);
+}
+
+/* / navbar top search /  */
+.navbar-top-search {
+  top: -13px;
+  right: 134%;
+}
+
+.navbar-top-search input {
+  border: 1px solid #ddd;
+  max-width: 0;
+  width: 0;
+  padding: 7px 7px 7px 43px;
+  background: #fff;
+  transition: 1s;
+  opacity: 0;
+  border-radius: 5px;
+}
+
+.add-search-box-in-navbar input {
+  max-width: 100%;
+  width: 300px;
+  opacity: 1;
+}
+
+.navbar-search-icons-toggle {
+  visibility: hidden;
+  left: 0 !important;
+  opacity: 1;
+}
+
+/* / navbar social /  */
+.navbar-search-icon {
+  position: relative;
+  margin-left: 40px;
+  z-index: 1;
+}
+
+.navbar-search-icon::after {
+  position: absolute;
+  content: "";
+  top: -7px;
+  left: -27px;
+  width: 2px;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  z-index: -1;
+}
+
+/* / navbar /  */
+.navbar {}
+
+.navbar-nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+li.nav-items {
+  padding: 10px;
+}
+
+.nav-links {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+.nav-links.active {
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+}
+
+/* / home-dropdown / */
+
+ /* / .home-dropdown-ab /  */
+ .home-dropdown {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  left: 0;
+  width: 300px;
+  background: #f94d1c;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 1s;
+  visibility: hidden;
+
+  /* / .triangle-top { */
+    left: 35px;
+    text-align: center;
+    transform: translate(-50%);
+  }
+
+  .triangle-top {
+    position: relative;
+    padding: 15px;
+  }
+
+  .triangle-top::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 0 15px 20px 15px;
+    border-color: transparent transparent #f94d1c transparent;
+    position: absolute;
+    bottom: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .home-dropdown-toggle {
+    height: auto;
+    overflow: unset;
+    opacity: 1;
+    visibility: visible;
+    top: 60px;
+    transition: 1s;
+  }
+
+  .home-dropdown .nav-items {
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid #fff;
+    /* / cursor: pointer; */
+  }
+
+  .home-dropdown .nav-links {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  
+  /* navbar-call   */
+  .navbar-call {
+    position: relative;
+  }
+
+  .navbar-call::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: -27px;
+    width: 2px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+  }
+
+  /* / off canvas menu collapse /  */
+  .toggle-dropdown-active .triangle-top {
+    visibility: visible;
+    margin-bottom: 15px;
+  }
+
+  .toggle-dropdown-active {
+    height: auto;
+    transition: 0.5s;
+  }
+
+  .toggle-dropdown-off .triangle-top {
+    visibility: hidden;
+  }
+
+  .toggle-dropdown-off {
+    height: 0;
+    transition: 0.5s;
+  }
+
+  .off-canvas-menu {
+    padding: 15px;
+    max-width: 300px;
+    position: fixed;
+    top: 0;
+    left: -999px;
+    transition: 0.5s;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .main-menu-toggle-class {
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+
+  .navScrollOver {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+    background-color: #f94d1c;
+    padding: 10px 0;
+  }
+
+  .dropdown-text li a {
+    color: #ea580c;
+  }
+
+  .nva-social-items a {
+    color: black;
+  }

@@ -1,0 +1,64 @@
+.gallery-items {
+  position: relative;
+  z-index: 1;
+}
+
+.gallery-items::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  opacity: 0.5;
+  z-index: 1;
+  visibility: hidden;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.gallery-items {
+  z-index: 5;
+}
+
+.gallery-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 5;
+  font-size: 0px;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+
+.gallery-box:hover .gallery-icon {
+  opacity: 1;
+  font-size: 50px;
+}
+
+.gallery-box:hover .gallery-items::before {
+  visibility: visible;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* / portfolio details /  */
+.time-line-items {
+  position: relative;
+}
+
+.time-line-items::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -125%;
+  width: 1px;
+  height: 50px;
+  background: #333;
+}
+

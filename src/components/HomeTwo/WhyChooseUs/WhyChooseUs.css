@@ -1,0 +1,29 @@
+.whyChoose-card {
+  background: white;
+}
+
+.whyChoose-card:hover {
+  background: #f94d1c;
+  color: white;
+}
+.whyChoose-card .imgCard {
+  background: #f94d1c;
+}
+
+.whyChoose-card:hover .imgCard {
+  background: white;
+}
+.whyChoose-card .imgCard .img1{
+  display: none;
+}
+
+.whyChoose-card:hover .imgCard .img1{
+  display: block;
+}
+.whyChoose-card .imgCard .img2{
+  display: block;
+}
+
+.whyChoose-card:hover .imgCard .img2{
+  display: none;
+}

@@ -1,0 +1,33 @@
+.team-two-card {
+  position: relative;
+  transition: all .40s ease-in-out;
+}
+
+.team-two-card:hover img {
+  filter: brightness(60%);
+}
+
+.team-two-card .name-title {
+  position: absolute;
+  bottom: -30px;
+  left: 60px;
+  opacity: 0;
+  background: #FFF;
+}
+
+.team-two-card:hover .name-title {
+  bottom: -10%;
+  opacity: 1;
+}
+
+.team-two-card .home-team-social {
+  position: absolute;
+  top: 30px;
+  right: -20px;
+  opacity: 0;
+}
+
+.team-two-card:hover .home-team-social {
+  right: 40px;
+  opacity: 1;
+}
