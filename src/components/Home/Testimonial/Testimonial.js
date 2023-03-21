@@ -38,9 +38,9 @@ const Testimonial = () => {
             // width: 768,
             slidesPerView: 2,
           },
-          1280: {
+          1040: {
             // width: 768,
-            slidesPerView: 4,
+            slidesPerView: 3,
           },
           1280: {
             // width: 768,
