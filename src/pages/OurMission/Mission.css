@@ -1,0 +1,38 @@
+.mission-top-images {
+  background: url("https://i.ibb.co/FhnLCjx/mission-2.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  right: -70%;
+  padding: 160px 0;
+}
+
+.mission-contained-1 {
+  background: url("https://i.ibb.co/FhnLCjx/mission-2.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  right: -70%;
+  padding: 160px 0;
+}
+
+.mission-contained-2 {
+  background: url("https://i.ibb.co/FhnLCjx/mission-2.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: -70%;
+  padding: 160px 0;
+}

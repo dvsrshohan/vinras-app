@@ -8,6 +8,7 @@ import OurBlogOne from './pages/Blog/OurBlogOne';
 import FAQ from './pages/FAQ/FAQ';
 import HomeOne from './pages/Home/HomeOne';
 import HomeTwo from './pages/Home/HomeTwo';
+import Mission from './pages/OurMission/Mission';
 import OurProtfolio from './pages/OurProtfolio/OurProtfolio';
 import OurProtfolioTwo from './pages/OurProtfolio/OurProtfolioTwo';
 import ProtfolioDetails from './pages/OurProtfolio/ProtfolioDetails';
@@ -92,6 +93,10 @@ function App() {
         {
           path: '/faq',
           element: <FAQ />
+        },
+        {
+          path: '/mission',
+          element: <Mission />
         },
       ]
     }

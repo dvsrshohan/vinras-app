@@ -220,6 +220,11 @@ const Navbar = () => {
                       >
                         <ul className="triangle-top">
                           <li className="nav-items">
+                            <Link className="nav-links" to="/mission">
+                              Mission
+                            </Link>
+                          </li>
+                          <li className="nav-items">
                             <Link className="nav-links" to="/portfolio">
                               Portfolio
                             </Link>
