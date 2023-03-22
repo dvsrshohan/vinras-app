@@ -44,7 +44,7 @@ const Case = () => {
                     <img className="w-full" src="https://i.ibb.co/jZYCC5s/01-Home.jpg" alt="" />
                   </dir>
                 </div>
-                {/* <div>
+                <div>
                   <dir>
                     <img src="https://i.ibb.co/10xYDvS/03-Home.jpg" alt="" />
                   </dir>
@@ -53,7 +53,7 @@ const Case = () => {
                   <dir>
                     <img src="https://i.ibb.co/G0DScWW/02-Home.jpg" alt="" />
                   </dir>
-                </div> */}
+                </div>
               </Slider>
 
               {/* {/ finance article /} */}

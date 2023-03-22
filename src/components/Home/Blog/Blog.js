@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaLongArrowAltRight, FaRegBookmark, FaRegComments } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
   return (
@@ -28,8 +29,10 @@ const Blog = () => {
               <p className='my-5'>Lorem ipsum is simply is text used by copytyping refreshing.</p>
               <hr />
               <div className="flex items-center justify-center mt-2">
-                <p>Read more</p>
-                <FaLongArrowAltRight />
+                <p><Link to=" " className="hover:text-primary transition-all duration-700">Read more</Link></p>
+                <Link to=" " className="hover:text-primary transition-all duration-700">
+                  <FaLongArrowAltRight />
+                </Link>
               </div>
             </div>
           </div>
@@ -45,8 +48,10 @@ const Blog = () => {
               <p className='my-5'>Lorem ipsum is simply is text used by copytyping refreshing.</p>
               <hr />
               <div className="flex items-center justify-center mt-2">
-                <p>Read more</p>
-                <FaLongArrowAltRight />
+                <p><Link to=" " className="hover:text-primary transition-all duration-700">Read more</Link></p>
+                <Link to=" " className="hover:text-primary transition-all duration-700">
+                  <FaLongArrowAltRight />
+                </Link>
               </div>
             </div>
           </div>
@@ -62,8 +67,10 @@ const Blog = () => {
               <p className='my-5'>Lorem ipsum is simply is text used by copytyping refreshing.</p>
               <hr />
               <div className="flex items-center justify-center mt-2">
-                <p>Read more</p>
-                <FaLongArrowAltRight />
+                <p><Link to=" " className="hover:text-primary transition-all duration-700">Read more</Link></p>
+                <Link to=" " className="hover:text-primary transition-all duration-700">
+                  <FaLongArrowAltRight />
+                </Link>
               </div>
             </div>
           </div>

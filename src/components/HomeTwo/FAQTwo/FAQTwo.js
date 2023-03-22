@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { RxPlay } from 'react-icons/rx';
+import ModalVideo from 'react-modal-video';
+
+
 
 const FAQTwo = () => {
+  const [isOpen, setOpen] = useState(false)
+
   return (
     <div className="mt-24">
       <div className='bg-[url(https://i.ibb.co/2t7SZvB/BG.png)] bg-cover bg-no-repeat bg-center py-24 block'>
@@ -9,15 +14,18 @@ const FAQTwo = () => {
           <div className="relative">
             <div className=" -top-[15%] inset-x-0 bg-[url(https://i.ibb.co/R9h0Vn3/video-bg.png)] py-[245px] flex justify-center" style={{ backgroundSize: '100% 100%' }}>
               <div className="border-white border-[1px] p-4 rounded-full">
-                <div className="bg-primary rounded-full w-24 h-24 flex items-center justify-center">
-                  <RxPlay className='text-white text-2xl' />
-                </div>
+                <React.Fragment>
+                  <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="6TaVPRcpOts" onClose={() => setOpen(false)} />
+                  <div onClick={() => setOpen(true)} className="bg-primary rounded-full w-24 h-24 flex items-center justify-center cursor-pointer">
+                    <RxPlay className='text-white text-2xl' />
+                  </div>
+                </React.Fragment>
               </div>
             </div>
             <div className="bg-white p-[60px] absolute left-3 bottom-0">
               <h4 className='text-[20px] font-semibold mb-7'>We’re committed to <br /> trusted financial advisors</h4>
               <a href=" " className='text-[12px] uppercase text-primary'>Get Started</a>
-              </div>
+            </div>
           </div>
           <div className="mt-24">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">

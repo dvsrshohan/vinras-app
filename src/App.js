@@ -1,5 +1,9 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import '../node_modules/react-modal-video/scss/modal-video.scss';
 import './App.css';
+
 import Main from './Layout/Main';
 import AboutUSOne from './pages/AboutUS/AboutUSOne';
 import AboutUsTow from './pages/AboutUS/AboutUsTow';

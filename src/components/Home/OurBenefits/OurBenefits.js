@@ -3,9 +3,9 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 
 const OurBenefits = () => {
   return (
-    <div className='bg-[#f7f7f7] py-24 my-24'>
+    <div className='bg-[#f7f7f7] py-24 my-24 relative'>
       <div className="container">
-        <div className="grid lg:grid-cols-2 grid-cols-1">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-7">
           <div className="">
             <div className="flex items-center gap-2">
               <h4 className='text-[22px] font-semibold text-primary'>Our Benefits</h4>
@@ -65,9 +65,9 @@ const OurBenefits = () => {
               </div>
             </div>
           </div>
-          <div className="relative ">
+          <div className=" ">
             <div className="w-full">
-              <img className='lg:absolute right-[-27%] top-[-40%] w-full ' src="/images/benefits.png" alt="" srcset="" />
+              <img className='lg:absolute right-0 2xl:top-[-20%] top-[-10%] 2xl:w-1/4 lg:w-1/2 w-full' src="/images/benefits.png" alt="" srcset="" />
             </div>
           </div>
         </div>

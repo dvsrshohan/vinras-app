@@ -1,6 +1,5 @@
 import React from 'react';
 import StaticHero from '../../components/AboutUS/StaticHero';
-import AboutTwo from '../../components/HomeTwo/AboutTwo/AboutTwo';
 import FAQTwo from '../../components/HomeTwo/FAQTwo/FAQTwo';
 import ServicesTwo from '../../components/HomeTwo/ServicesTwo/ServicesTwo';
 import Skills from '../../components/HomeTwo/Skills/Skills';

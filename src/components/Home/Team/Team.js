@@ -18,7 +18,7 @@ const Team = () => {
         <h3 className='text-[50px] font-bold'>Our Professional Consultants</h3>
       </div>
 
-      <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center gap-[30px] my-14">
         <div className="home-team-card">
           <div className="">
             <img className='rounded-tl-[5px] rounded-tr-[100px] rounded-bl-[100px] rounded-br-[5px] hover:brightness-[60%] transition-all duration-700' src="/images/team1.png" alt="" srcset="" />

@@ -11,7 +11,7 @@ const Hero = () => {
         backgroundRepeat: "no-repeat",
       }}>
         <div className="container my-auto">
-          <div className="grid lg:grid-cols-2 grid-cols-1">
+          <div className="grid xl:grid-cols-2 grid-cols-1">
             <div className="">
               <div className="text-[30px] font-medium text-white">
                 <span>Technology </span> <span>|</span> <span> Business  </span> <span> | </span> <span>Consultan</span>

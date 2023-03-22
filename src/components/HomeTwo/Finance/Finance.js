@@ -27,16 +27,16 @@ const Finance = () => {
                   <img src="https://i.ibb.co/jZYCC5s/01-Home.jpg" alt="" />
                 </dir>
               </div>
-              {/* <div>
-                <dir>
-                  <img src="https://i.ibb.co/10xYDvS/03-Home.jpg" alt="" />
+              <div className="w-full">
+                <dir className="w-full">
+                  <img className="w-full" src="https://i.ibb.co/10xYDvS/03-Home.jpg" alt="" />
                 </dir>
               </div>
               <div>
                 <dir>
                   <img src="https://i.ibb.co/G0DScWW/02-Home.jpg" alt="" />
                 </dir>
-              </div> */}
+              </div>
             </Slider>
 
             {/* {/ finance article /} */}

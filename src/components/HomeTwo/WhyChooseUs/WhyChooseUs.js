@@ -1,5 +1,5 @@
 import React from 'react';
-import './WhyChooseUs.css'
+import './WhyChooseUs.css';
 
 
 const WhyChooseUs = () => {
@@ -89,7 +89,7 @@ const WhyChooseUs = () => {
 
             <div className="lg:w-[50%] w-full lg:absolute top-0 right-0">
               <div className="">
-                <iframe src={mapUrl} className="w-full h-[850px] " frameborder="0"></iframe>
+                <iframe src={mapUrl} title="map" className="w-full h-[850px] " frameborder="0"></iframe>
               </div>
             </div>
           </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { RxExit } from 'react-icons/rx';
 import './AboutTwo.css';
 
 const AboutTwo = () => {
@@ -9,13 +8,13 @@ const AboutTwo = () => {
         <div className="grid lg:grid-cols-2 grid-cols-1 items-center">
           <div className="relative">
             <div className="">
-              <img className='min-w-[92%]' src="/images/about-2.png" alt="" srcset="" />
+              <img className='w-[92%]' src="/images/about-2.png" alt="" srcset="" />
             </div>
             <div className="">
               <div className="bg-primary py-[47px] px-9 block absolute bottom-0 right-0">
                 <h2 className='text-[40px] font-bold text-white'>12k <sup>+</sup> <br /> Projects <br /> Complete </h2>
               </div>
-              <div className="bg-primary py-[47px] px-9 block absolute top-0 right-0">
+              <div className="bg-primary py-[47px] px-9 block absolute top-5 right-0">
                 <h2 className='text-[25px] font-semibold text-white'>10<sup>+</sup> Year <br /> Experience </h2>
               </div>
             </div>
@@ -25,7 +24,7 @@ const AboutTwo = () => {
               <h4 className='text-[22px] font-semibold text-primary'>About Us</h4>
               <div className='w-10 h-[2px] bg-primary'></div>
             </div>
-            <h3 className='text-[50px] font-bold'>We are more than you
+            <h3 className='xl:text-[50px] text-[40px] font-bold'>We are more than you
               imagine</h3>
             
             <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-14 mt-12">
@@ -56,14 +55,14 @@ const AboutTwo = () => {
             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
               <div className="block">
                 <div className="border-black rounded border-2 border-dashed p-5 flex justify-between items-center">
-                  <h2 className='text-[50px] font-medium text-black'>10<sup>+</sup> <br /> </h2>
-                  <h3 className='text-[20px] font-medium'>Years Of <br /> Experience </h3>
+                  <h2 className='xl:text-[50px] text-[40px] font-medium text-black'>10<sup>+</sup> <br /> </h2>
+                  <h3 className='xl:text-[20px] text-[18px] font-medium'>Years Of <br /> Experience </h3>
                 </div>
               </div>
               <div className="block">
                 <div className="border-black rounded border-2 border-dashed p-5 flex justify-between items-center">
-                  <h2 className='text-[50px] font-medium text-black'>70<sup>k</sup> <br /> </h2>
-                  <h3 className='text-[20px] font-medium'>Clients <br /> Individual </h3>
+                  <h2 className='xl:text-[50px] text-[40px] font-medium text-black'>70<sup>k</sup> <br /> </h2>
+                  <h3 className='xl:text-[20px] text-[18px] font-medium'>Clients <br /> Individual </h3>
                 </div>
               </div>
             </div>

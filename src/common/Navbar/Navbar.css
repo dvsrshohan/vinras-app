@@ -20,6 +20,78 @@
   z-index: -1;
 }
 
+@media only screen and (max-width: 2425px) and (min-width: 1900px) {
+  .navbar-left-shape::before {
+      width: 24%;
+    }
+}
+@media only screen and (max-width: 1835px) and (min-width: 1475px) {
+  .navbar-left-shape::before {
+      width: 19%;
+    }
+}
+@media only screen and (max-width: 1385px) and (min-width: 1286px) {
+  .navbar-left-shape::before {
+      width: 15%;
+    }
+}
+@media only screen and (max-width: 1285px) and (min-width: 1280px) {
+  .navbar-left-shape::before {
+      width: 14%;
+    }
+}
+@media only screen and (max-width: 1279px) and (min-width: 1230px) {
+  .navbar-left-shape::before {
+      width: 21%;
+    }
+}
+@media only screen and (max-width: 1229px) and (min-width: 1200px) {
+  .navbar-left-shape::before {
+      width: 20%;
+    }
+}
+@media only screen and (max-width: 1199px) and (min-width: 1160px) {
+  .navbar-left-shape::before {
+      width: 20%;
+    }
+}
+@media only screen and (max-width: 1159px) and (min-width: 1140px) {
+  .navbar-left-shape::before {
+      width: 18%;
+    }
+}
+@media only screen and (max-width: 1899px) and (min-width: 1836px) {
+  .navbar-left-shape::before {
+      width: 23%;
+    }
+}
+@media only screen and (max-width: 1060px) and (min-width: 1024px) {
+  .navbar-left-shape::before {
+      width: 14%;
+    }
+  }
+@media only screen and (max-width: 1023px) and (min-width: 360px) {
+  .navbar-left-shape::before {
+      width: 100%;
+    }
+  }
+  /* @media only screen and (min-width: 1060px) {
+    .navbar-left-shape::before {
+      width: 19%;
+    }
+  }
+   @media only screen and (max-width: 1100px) {
+    .navbar-left-shape::before {
+      width: 14%;
+    }
+  } */
+@media only screen and (max-width: 359px) {
+  .navbar-left-shape::before {
+      width: 100%;
+    }
+}
+
+
 .navbar-wrapper::before {
   position: absolute;
   content: "";
@@ -103,12 +175,11 @@ li.nva-social-items {
 }
 
 /* / navbar /  */
-.navbar {}
 
 .navbar-nav {
   display: flex;
-  justify-content: start;
   align-items: center;
+  justify-content: start;
 }
 
 li.nav-items {

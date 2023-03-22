@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../../common/Footer/Footer';
 import AboutTop from '../../components/HomeTwo/AboutTwo/AboutTop';
 import AboutTwo from '../../components/HomeTwo/AboutTwo/AboutTwo';
 import BlogTwo from '../../components/HomeTwo/BlogTwo/BlogTwo';
@@ -26,7 +25,6 @@ const HomeTwo = () => {
       <WhyChooseUs />
       <TestimonialTwo />
       <BlogTwo />
-      <Footer/>
     </div>
   );
 };

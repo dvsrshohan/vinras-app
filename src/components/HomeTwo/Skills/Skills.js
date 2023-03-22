@@ -3,7 +3,7 @@ import React from 'react';
 const Skills = () => {
   return (
     <div className='py-24'>
-      <div className="container bg-[#fafafa] my-24 md:p-24">
+      <div className="container bg-[#fafafa] my-24 md:p-24 relative">
         <div className="grid lg:grid-cols-2 grid-cols-1  gap-14">
           <div className="container">
             <div className="">
@@ -45,8 +45,10 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="md:mt-[-35%] md:mr-[-15%]">
-            <img className=' w-full' src="/images/skill-1.png" alt="" srcset="" />
+          <div className="">
+            <div className=" lg:absolute -top-[5%] right-0 flex justify-end">
+              <img className=' lg:w-2/3 w-full' src="/images/skill-1.png" alt="" srcset="" />
+            </div>
           </div>
         </div>
         
