@@ -14,7 +14,7 @@ const Mission = () => {
       <div className="container py-12 h-full">
         <div className="flex items-center h-full max-h-full">
           <div className="w-full xl:max-w-[50%] md:w-[70%] xl:mx-auto">
-            <div className="top-row grid grid-cols-2 gap-7">
+            <div className="top-row grid md:grid-cols-2 grid-cols-1 gap-7">
               <div>
                 <img
                   src="https://i.ibb.co/C6VD4Xm/Layer-93-1.png"
@@ -44,44 +44,46 @@ const Mission = () => {
         </div>
 
         {/* {/ content bottom /} */}
-        <div className="w-full xl:max-w-[50%] md:w-[40%] mx-auto flex items-center justify-between my-36">
+        <div className="w-full xl:max-w-[50%] md:w-[40%] lg:mx-auto flex items-center justify-between my-36">
           <div className="mission-contained-1"></div>
-          <div className="mission-contained">
-            <h1 className="text-[40px] font-bold py-7">
-              Vinras Is A Very Strong
-              Impact
-            </h1>
-            <p className="py-4 text-sm font-normal">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit
-            </p>
-            <ul>
-              <li className="flex items-center mt-3 text-[16px] justify-start">
-                <div className="mr-4 bg-white w-10 h-10 flex items-center justify-center shadow rounded-full" >
-                  <GrCheckmark />
-                </div>
-                Nostrud exercitation ullamco
-                laboris
-              </li>
-              <li className="flex items-center mt-3 text-[16px] justify-start">
-                <div className="mr-4 bg-white w-10 h-10 flex items-center justify-center shadow rounded-full" >
-                  <GrCheckmark />
-                </div>
-                velit esse cillum dolore eu fugiat nulla pariatur. Excep
-              </li>
-              <li className="flex items-center mt-3 text-[16px] justify-start">
-                <div className="mr-4 bg-white w-10 h-10 flex items-center justify-center shadow rounded-full" >
-                  <GrCheckmark />
-                </div>
-                non proident, sunt in culpa qui officia deserunt mollit anim
-              </li>
-              <li className="flex items-center mt-3 text-[16px] justify-start">
-                <div className="mr-4 bg-white w-10 h-10 flex items-center justify-center shadow rounded-full" >
-                  <GrCheckmark />
-                </div>
-                Sed ut perspiciatis unde omnis iste natus error sit vo
-              </li>
-            </ul>
+          <div className="flex justify-end">
+            <div className="mission-contained">
+              <h1 className="text-[40px] font-bold py-7">
+                Vinras Is A Very Strong
+                Impact
+              </h1>
+              <p className="py-4 text-sm font-normal">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit
+              </p>
+              <ul>
+                <li className="flex items-center mt-3 text-[16px] justify-start">
+                  <div className="mr-4 bg-white w-10 h-10 flex items-center justify-center shadow rounded-full" >
+                    <GrCheckmark />
+                  </div>
+                  Nostrud exercitation ullamco
+                  laboris
+                </li>
+                <li className="flex items-center mt-3 text-[16px] justify-start">
+                  <div className="mr-4 bg-white w-10 h-10 flex items-center justify-center shadow rounded-full" >
+                    <GrCheckmark />
+                  </div>
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excep
+                </li>
+                <li className="flex items-center mt-3 text-[16px] justify-start">
+                  <div className="mr-4 bg-white w-10 h-10 flex items-center justify-center shadow rounded-full" >
+                    <GrCheckmark />
+                  </div>
+                  non proident, sunt in culpa qui officia deserunt mollit anim
+                </li>
+                <li className="flex items-center mt-3 text-[16px] justify-start">
+                  <div className="mr-4 bg-white w-10 h-10 flex items-center justify-center shadow rounded-full" >
+                    <GrCheckmark />
+                  </div>
+                  Sed ut perspiciatis unde omnis iste natus error sit vo
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="mission-contained-2"></div>
         </div>

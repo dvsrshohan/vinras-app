@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
       <div className="container">
         <div className="grid lg:grid-cols-2 grid-cols-1 mb-10">
           <div className="">
-            <h2 className='text-[50px] font-bold'>Client Choose Wisely</h2>
+            <h2 className='xl:text-[50px] text-[33px] font-bold'>Client Choose Wisely</h2>
             <p className='text-primary text-[18px] font-medium'>Why Choose Us</p>
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1">

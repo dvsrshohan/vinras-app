@@ -1,13 +1,19 @@
 import React from 'react';
 import { GoPlus } from "react-icons/go";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 import StaticHero from '../../components/AboutUS/StaticHero';
+
 import './portfolio.css';
 
 const OurProtfolioTwo = () => {
+
+  const imageURL = "https://i.ibb.co/YBWn5gx/gallery-1.png";
+
   return (
     <div>
 
-      <StaticHero title={"Our Portfolio"}/>
+      <StaticHero title={"Our Portfolio"} />
 
       <div className="container mt-12">
         <div>
@@ -44,11 +50,23 @@ const OurProtfolioTwo = () => {
                 </div>
                 <div className="gallery-box">
                   <div className="gallery-items">
-                    <img
+
+                    {/* <PhotoProvider
+                      speed={() => 800}
+                      easing={(type) => (type === 2 ? 'cubic-bezier(0.36, 0, 0.66, -0.56)' : 'cubic-bezier(0.34, 1.56, 0.64, 1)')}
+                    /> */}
+
+                    <PhotoProvider>
+                      <PhotoView src={imageURL}>
+                        <img src={imageURL} style={{ objectFit: 'cover' }} alt="" />
+                      </PhotoView>
+                    </PhotoProvider>
+
+                    {/* <img
                       src="https://i.ibb.co/YBWn5gx/gallery-1.png"
                       alt="gallery"
                       className="w-full max-w-full"
-                    />
+                    /> */}
                     <span className="gallery-icon">
                       <GoPlus />
                     </span>

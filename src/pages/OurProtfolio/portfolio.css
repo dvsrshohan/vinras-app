@@ -3,7 +3,7 @@
   z-index: 1;
 }
 
-.gallery-items::before {
+/* .gallery-items::before {
   position: absolute;
   content: "";
   top: 0;
@@ -45,14 +45,15 @@
   visibility: visible;
   opacity: 0.7;
   cursor: pointer;
-}
+} */
 
 /* / portfolio details /  */
 .time-line-items {
   position: relative;
+  margin-bottom: 10px;
 }
 
-.time-line-items::before {
+/* .time-line-items::before {
   position: absolute;
   content: "";
   top: 0;
@@ -60,5 +61,4 @@
   width: 1px;
   height: 50px;
   background: #333;
-}
-
+} */

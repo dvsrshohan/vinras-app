@@ -14,7 +14,7 @@ const ServicesTwo = () => {
                 <h4 className='text-[22px] font-semibold text-primary'>Our Services</h4>
                 <div className='w-10 h-[2px] bg-primary'></div>
               </div>
-              <h2 className='text-[50px] font-bold text-[#1a1a1a]'>Our Popular Service</h2>
+              <h2 className='xl:text-[50px] text-[33px] font-bold text-[#1a1a1a]'>Our Popular Service</h2>
             </div>
 
             <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 my-16 gap-5">

@@ -12,7 +12,7 @@ const TeamTwo = () => {
             <h4 className='text-[22px] font-semibold text-primary'>Our Team</h4>
             <div className='w-10 h-[2px] bg-primary'></div>
           </div>
-          <h2 className='text-[50px] font-bold text-[#1a1a1a]'>Meet  Our Amazing Team </h2>
+          <h2 className='xl:text-[50px] text-[33px] font-bold text-[#1a1a1a]'>Meet  Our Amazing Team </h2>
         </div>
 
         <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center gap-[30px] py-[50px] ">

@@ -22,7 +22,7 @@ const Case = () => {
             <h4 className='text-[22px] font-semibold text-primary'>Our case</h4>
             <div className='w-10 h-[2px] bg-primary'></div>
           </div>
-          <h3 className='text-[50px] font-bold'>Amazing Work Showcase</h3>
+          <h3 className='xl:text-[50px] text-[33px] font-bold'>Amazing Work Showcase</h3>
         </div>
         <div className="my-4 md:mt-0">
           <button className="flex justify-between items-center py-4 px-7 bg-[#F94D1C] text-white rounded-full mt-7">
@@ -35,12 +35,12 @@ const Case = () => {
         <div className="mt-12 finance">
           {/* {/ finance content /} */}
           <div className="finance-content-box flex items-center justify-center">
-            <div className="m max-w-[60%] mx-auto finance-content">
+            <div className="m md:max-w-[60%] w-full mx-auto finance-content">
               {/* {/ <img src="../images / finance / 01_Home.jpg" alt="" /> /} */}
 
               <Slider {...settings}>
                 <div className="w-full" >
-                  <dir className="w-full" style={{paddingLeft:"0"}}>
+                  <dir className="w-full" style={{ paddingLeft: "0" }}>
                     <img className="w-full" src="https://i.ibb.co/jZYCC5s/01-Home.jpg" alt="" />
                   </dir>
                 </div>
@@ -58,7 +58,7 @@ const Case = () => {
 
               {/* {/ finance article /} */}
               <div
-                className="bg-white p-4 shadow-lg absolute bottom-[-100px] flex items-center justify-between gap-7 max-w-[60%] mx-auto right-1/2 z-10 my-20"
+                className="bg-white p-4 shadow-lg absolute bottom-[-100px] flex items-center justify-between gap-7 md:max-w-[60%] w-[80%] mx-auto right-1/2 z-10 my-20"
                 style={{ transform: "translateX(50%)" }}
               >
                 <div>

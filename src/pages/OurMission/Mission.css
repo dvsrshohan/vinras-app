@@ -11,6 +11,12 @@
   padding: 160px 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .mission-top-images {
+    background: none;
+  }
+}
+
 .mission-contained-1 {
   background: url("https://i.ibb.co/FhnLCjx/mission-2.png");
   background-attachment: scroll;
@@ -24,6 +30,8 @@
   padding: 160px 0;
 }
 
+
+
 .mission-contained-2 {
   background: url("https://i.ibb.co/FhnLCjx/mission-2.png");
   background-attachment: scroll;
@@ -35,4 +43,14 @@
   position: absolute;
   left: -70%;
   padding: 160px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .mission-contained-1 {
+    background: none;
+  }
+
+  .mission-contained-2 {
+    background: none;
+  }
 }

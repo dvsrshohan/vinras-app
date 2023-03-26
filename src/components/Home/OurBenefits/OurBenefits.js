@@ -11,9 +11,9 @@ const OurBenefits = () => {
               <h4 className='text-[22px] font-semibold text-primary'>Our Benefits</h4>
               <div className='w-10 h-[2px] bg-primary'></div>
             </div>
-            <h2 className='text-[50px] font-bold'>Success Building Experience</h2>
+            <h2 className='xl:text-[50px] text-[33px] font-bold'>Success Building Experience</h2>
 
-            <div className="flex mt-16 gap-16 items-center">
+            <div className="md:flex mt-16 gap-16 items-center">
               <div className="">
                 <div className="">
                   <div className="text-center">
@@ -22,21 +22,21 @@ const OurBenefits = () => {
                     </div>
                     <p className='text-[18px] text-black font-bold'>Affordable <br /> Cost</p>
                   </div>
-                  
-                  <hr className='my-7'/>
+
+                  <hr className='my-7' />
 
                   <div className="text-center">
                     <div className='mx-auto mb-5' style={{ width: 75, height: 75 }}>
                       <CircularProgressbar counterClockwise={true} value={52} strokeWidth={5} text={`${52}%`} />
                     </div>
                     <p className='text-[18px] text-black font-bold'>Quality <br /> of Work</p>
-                </div>
+                  </div>
                 </div>
               </div>
-              
+
               <div className="">
                 <div tabIndex={0} className="collapse collapse-arrow bg-white rounded-box mb-5">
-                  <input type="checkbox" className="peer" /> 
+                  <input type="checkbox" className="peer" />
                   <div className="collapse-title text-[18px] font-bold">
                     Think Ahead And Boost Your Business?
                   </div>
@@ -45,7 +45,7 @@ const OurBenefits = () => {
                   </div>
                 </div>
                 <div tabIndex={0} className="collapse collapse-arrow bg-white rounded-box mb-5">
-                  <input type="checkbox" className="peer" /> 
+                  <input type="checkbox" className="peer" />
                   <div className="collapse-title text-[18px] font-bold">
                     Maecenas condimentum sollicitudin ligula,
                   </div>
@@ -54,7 +54,7 @@ const OurBenefits = () => {
                   </div>
                 </div>
                 <div tabIndex={0} className="collapse collapse-arrow bg-white rounded-box mb-5">
-                  <input type="checkbox" className="peer" /> 
+                  <input type="checkbox" className="peer" />
                   <div className="collapse-title text-[18px] font-bold">
                     What Is The Best Advice For Growth?
                   </div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Blog = () => {
   return (
-    <div className="bg-[url(https://i.ibb.co/TTPtPyv/BG-shap.png)] bg-no-repeat bg-left-top">
+    <div className="md:bg-[url(https://i.ibb.co/TTPtPyv/BG-shap.png)] bg-no-repeat bg-left-top">
 
       <div className='container my-24'>
         <div className="text-center mb-9">
@@ -13,7 +13,7 @@ const Blog = () => {
             <h4 className='text-[22px] font-semibold text-primary'>Our Articles</h4>
             <div className='w-10 h-[2px] bg-primary'></div>
           </div>
-          <h3 className='text-[50px] font-bold'>Our Latest Blog Post</h3>
+          <h3 className='xl:text-[50px] text-[33px] font-bold'>Our Latest Blog Post</h3>
         </div>
 
         <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:w-[85%] w-full mx-auto gap-10">

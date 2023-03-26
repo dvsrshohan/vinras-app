@@ -7,7 +7,7 @@ const AboutTop = () => {
       <div className="container">
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <div className="bg-[#fafafa] border py-[53px] px-[35px] shadow lg:mt-[-15%]">
-            <div className="flex items-center">
+            <div className="md:flex items-center">
               <div className="mr-10">
                 <img src="/images/icon-4.png" alt="" srcset="" />
               </div>
@@ -20,7 +20,7 @@ const AboutTop = () => {
             </div>
           </div>
           <div className="bg-[#fafafa] border py-[53px] px-[35px] shadow lg:mt-[-15%]">
-            <div className="flex items-center">
+            <div className="md:flex items-center">
               <div className="mr-10">
                 <img src="/images/icon-5.png" alt="" srcset="" />
               </div>

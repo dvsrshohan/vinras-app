@@ -18,12 +18,12 @@ const Finance = () => {
       <div className="mt-12 finance">
         {/* {/ finance content /} */}
         <div className="finance-content-box flex items-center justify-center">
-          <div className="m-4 max-w-[60%] mx-auto finance-content">
+          <div className="m-4 md:max-w-[60%] w-full mx-auto finance-content">
             {/* {/ <img src="../images / finance / 01_Home.jpg" alt="" /> /} */}
 
             <Slider {...settings}>
               <div>
-                <dir style={{paddingLeft:"0"}}>
+                <dir style={{ paddingLeft: "0" }}>
                   <img src="https://i.ibb.co/jZYCC5s/01-Home.jpg" alt="" />
                 </dir>
               </div>
@@ -40,13 +40,13 @@ const Finance = () => {
             </Slider>
 
             {/* {/ finance article /} */}
-            <div className="finance-article-wrap flex items-center justify-between gap-7">
+            <div className="finance-article-wrap -mb-10 flex items-center justify-between gap-7">
               <article className="finance-article grow">
                 <h5 className="text-sm font-light uppercase">
                   Business, finance
                 </h5>
-                <h3 className="text-2xl font-semibold">Finance Consulting</h3>
-                <p className="text-white text-[13px] mt-2">
+                <h3 className="md:text-2xl text-[18px] font-semibold">Finance Consulting</h3>
+                <p className="text-white text-[13px] mt-2 md:block hidden">
                   Suspendisse finibus urna mauris, vitae quam vel. <br />{" "}
                   Vestibulum leo ligula, ed luctus.
                 </p>
@@ -54,8 +54,8 @@ const Finance = () => {
 
               {/* {/ array /} */}
               <div className="grow-0 ml-20 cursor-pointer">
-                <span className="w-12 h-12 rounded-full border-gray-200 border text-7xl flex items-center justify-center relative">
-                  <CgArrowLongRight className="absolute left-[-35px]" />
+                <span className="md:w-12 w-6 md:h-12 h-6 rounded-full border-gray-200 border md:text-7xl text-3xl flex items-center justify-center relative">
+                  <CgArrowLongRight className="absolute md:left-[-35px] left-[-13px]" />
                 </span>
               </div>
             </div>

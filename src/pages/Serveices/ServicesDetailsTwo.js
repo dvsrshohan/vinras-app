@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CiSearch } from "react-icons/ci";
 import {
   FaAngleDoubleRight,
@@ -9,13 +9,16 @@ import {
 } from "react-icons/fa";
 import { GrPlay } from "react-icons/gr";
 import { HiOutlineArrowNarrowRight, HiOutlineCheck } from "react-icons/hi";
+import ModalVideo from 'react-modal-video';
 import StaticHero from '../../components/AboutUS/StaticHero';
 
 const ServicesDetailsTwo = () => {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <div>
       <StaticHero title={"Services Details"} />
-      
+
 
       <div className="">
         <div className="service-details-content ">
@@ -72,16 +75,19 @@ const ServicesDetailsTwo = () => {
                     alt="cata"
                     className="max-w-full w-full"
                   />
+                    <React.Fragment>
+                      <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="6TaVPRcpOts" onClose={() => setOpen(false)} />
                   <div
                     className="absolute top-1/2 left-1/2"
                     style={{ transform: "translateX(-50%)" }}
                   >
-                    <span className="w-[90px] h-[90px] rounded-full border flex items-center justify-center">
-                      <span className="w-16 h-16 rounded-full flex items-center justify-center bg-[#F94D1C] text-white cursor-pointer">
-                        <GrPlay className="text-white" />
+                      <span onClick={() => setOpen(true)} className="w-[90px] h-[90px] rounded-full border flex items-center justify-center">
+                        <span className="w-16 h-16 rounded-full flex items-center justify-center bg-[#F94D1C] text-white cursor-pointer">
+                          <GrPlay className="text-white" />
+                        </span>
                       </span>
-                    </span>
                   </div>
+                    </React.Fragment>
                 </div>
 
                 <article className="m-7">
@@ -105,6 +111,32 @@ const ServicesDetailsTwo = () => {
                     <span className="p-4 py-3 px-7 border hover:bg-[#F94D1C] cursor-pointer transition-all duration-500 hover:text-white font-bold">
                       Supper support
                     </span>
+                  </div>
+
+                  <div className="">
+                    <p className='text-[18px] text-[#878c8f]'>
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa quisit ,officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis is amet natus error sit voluptatem accusantium doloremque laudantium, totam reaperiam, eaque ipsa quae ab ilnventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsavoluptatem quia voluptas sit aspernatur aut odit aufugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor  consectetur,
+                    </p>
+
+                    <div className="my-9">
+                      <div className="flex items-center gap-4 mt-2 mb-2">
+                        <span className='w-4 h-4 block bg-[#bfc2c3] rounded-full'></span>
+                        <p className='text-[18px] text-[#878c8f]'>
+                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-4 mt-2 mb-2">
+                        <span className='w-4 h-4 block bg-[#bfc2c3] rounded-full'></span>
+                        <p className='text-[18px] text-[#878c8f]'>
+                          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        </p>
+                      </div>
+                    </div>
+
+                    <h2 className='text-[32px] font-bold'>Planning and work strategy</h2>
+                    <p className='text-[18px] text-[#878c8f] my-4'>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
                   </div>
 
                   {/* {/ list /} */}

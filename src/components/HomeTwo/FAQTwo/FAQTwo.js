@@ -5,7 +5,7 @@ import ModalVideo from 'react-modal-video';
 
 
 const FAQTwo = () => {
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <div className="mt-24">
@@ -16,20 +16,20 @@ const FAQTwo = () => {
               <div className="border-white border-[1px] p-4 rounded-full">
                 <React.Fragment>
                   <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="6TaVPRcpOts" onClose={() => setOpen(false)} />
-                  <div onClick={() => setOpen(true)} className="bg-primary rounded-full w-24 h-24 flex items-center justify-center cursor-pointer">
-                    <RxPlay className='text-white text-2xl' />
-                  </div>
                 </React.Fragment>
+                <div onClick={() => setOpen(true)} className="bg-primary rounded-full w-24 h-24 flex items-center justify-center cursor-pointer">
+                  <RxPlay className='text-white text-2xl' />
+                </div>
               </div>
             </div>
-            <div className="bg-white p-[60px] absolute left-3 bottom-0">
+            <div className="bg-white md:p-[60px] p-6 absolute left-3 bottom-0">
               <h4 className='text-[20px] font-semibold mb-7'>We’re committed to <br /> trusted financial advisors</h4>
               <a href=" " className='text-[12px] uppercase text-primary'>Get Started</a>
             </div>
           </div>
           <div className="mt-24">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
-              <div className="grid md:grid-cols-2 grid-cols-1 gap-[30px]">
+              <div className="grid xl:grid-cols-2 grid-cols-1 gap-[30px]">
                 <div className="">
                   <div className="bg-white rounded shadow ">
                     <p className='py-[18px] px-[35px]'>Excepteur sint occaecat cupidatat paroident sunt in culpa qui officia deserunt mollianim id est laborum. Sed ut perspiciatis unde </p>

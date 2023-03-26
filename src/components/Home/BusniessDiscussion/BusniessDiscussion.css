@@ -23,3 +23,61 @@
 .swiper-button-next {
   right: 10px;
 }
+
+.video-shape {
+  width: 300px;
+  height: 180px;
+  background-color: #f94c1cb6;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: absolute;
+  bottom: -3px;
+  left: -51px;
+  border-start-end-radius: 50px;
+  border-end-end-radius: 50px;
+  transform: rotate(-31deg);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+.video-shape .video-border {
+  transform: rotate(31deg);
+  margin-right: 70px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .video-shape {
+    width: 200px;
+    height: 110px;
+    bottom: -35px;
+    left: -80px;
+    border-start-end-radius: 30px;
+    border-end-end-radius: 30px;
+  }
+
+  .video-shape .video-border {
+    margin-right: 46px;
+  }
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: white;
+  width: 44px;
+  color: #F94D1C;
+  padding: 7px;
+}
+
+.swiper-button-next {
+  right: 12%;
+}
+
+.swiper-button-prev {
+  left: 90%;
+}

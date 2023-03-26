@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import { FaFacebookSquare, FaInstagram, FaPinterestP, FaTwitter } from 'react-icons/fa';
 import StaticHero from '../../components/AboutUS/StaticHero';
 import Case from '../../components/HomeTwo/Case/Case';
@@ -47,6 +48,15 @@ const ProtfolioDetails = () => {
               </div>
             </div>
           </div>
+        </div>
+        {/* {/ next and prev /} */}
+        <div className="flex items-center justify-between border-t pt-7 border-b pb-7 my-7">
+          <span className="flex items-center cursor-pointer justify-between">
+            <BsArrowLeft className="mr-4" /> Previous
+          </span>
+          <span className="flex items-center cursor-pointer justify-between">
+            Next <BsArrowRight className="ml-4" />
+          </span>
         </div>
       </div>
 

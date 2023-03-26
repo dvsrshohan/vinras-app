@@ -20,11 +20,11 @@ const Testimonial = () => {
             <h4 className='text-[22px] font-semibold text-primary'>Testimonial</h4>
             <div className='w-10 h-[2px] bg-primary'></div>
           </div>
-          <h3 className='text-[50px] font-bold'>Our Sweet Client Say</h3>
+          <h3 className='xl:text-[50px] text-[33px] font-bold'>Our Sweet Client Say</h3>
         </div>
 
       </div>
-        <Swiper
+      <Swiper
         breakpoints={{
           576: {
             // width: 576,
@@ -47,8 +47,8 @@ const Testimonial = () => {
             slidesPerView: 4,
           },
         }}
-          centeredSlides={true}
-          spaceBetween={30}
+        centeredSlides={true}
+        spaceBetween={30}
         grabCursor={true}
         reverseDirection={true}
         loop={true}
@@ -56,8 +56,8 @@ const Testimonial = () => {
           delay: 500,
           disableOnInteraction: false
         }}
-          className="mySwiper"
-        >
+        className="mySwiper"
+      >
         <SwiperSlide>
           <div className="bg-white text-center border rounded shadow-lg my-14">
             <div className="flex justify-center mt-[-60px]">
@@ -130,7 +130,7 @@ const Testimonial = () => {
             </div>
           </div>
         </SwiperSlide>
-        </Swiper>
+      </Swiper>
     </div>
   );
 };

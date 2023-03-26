@@ -8,14 +8,14 @@ const Team = () => {
   return (
     <div className='container my-24 pb-24'>
 
-      
-      <div className={`text-center ${location === "/team" ? "hidden  mb-7" : " " }`}>
+
+      <div className={`text-center ${location === "/team" ? "hidden  mb-7" : " "}`}>
         <div className="flex items-center justify-center gap-2">
           <div className='w-10 h-[2px] bg-primary'></div>
           <h4 className='text-[22px] font-semibold text-primary'>Meet Our Advisors</h4>
           <div className='w-10 h-[2px] bg-primary'></div>
         </div>
-        <h3 className='text-[50px] font-bold'>Our Professional Consultants</h3>
+        <h3 className='xl:text-[50px] text-[33px] font-bold'>Our Professional Consultants</h3>
       </div>
 
       <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center gap-[30px] my-14">
@@ -40,7 +40,7 @@ const Team = () => {
           <div className="name-title  transition-all duration-700">
             <h2 className='text-[30px] font-semibold text-white'>Ehristine Eve</h2>
             <p className='font-medium text-white'>Senior Manager</p>
-           </div>
+          </div>
         </div>
         <div className="home-team-card">
           <div className="">
@@ -63,7 +63,7 @@ const Team = () => {
           <div className="name-title  transition-all duration-700">
             <h2 className='text-[30px] font-semibold text-white'>Ehristine Eve</h2>
             <p className='font-medium text-white'>Senior Manager</p>
-           </div>
+          </div>
         </div>
         <div className="home-team-card">
           <div className="">
@@ -86,7 +86,7 @@ const Team = () => {
           <div className="name-title  transition-all duration-700">
             <h2 className='text-[30px] font-semibold text-white'>Ehristine Eve</h2>
             <p className='font-medium text-white'>Senior Manager</p>
-           </div>
+          </div>
         </div>
         <div className="home-team-card">
           <div className="">
@@ -109,7 +109,7 @@ const Team = () => {
           <div className="name-title  transition-all duration-700">
             <h2 className='text-[30px] font-semibold text-white'>Ehristine Eve</h2>
             <p className='font-medium text-white'>Senior Manager</p>
-           </div>
+          </div>
         </div>
       </div>
     </div>

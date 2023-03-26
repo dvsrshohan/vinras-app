@@ -11,22 +11,22 @@ const AboutTwo = () => {
               <img className='w-[92%]' src="/images/about-2.png" alt="" srcset="" />
             </div>
             <div className="">
-              <div className="bg-primary py-[47px] px-9 block absolute bottom-0 right-0">
-                <h2 className='text-[40px] font-bold text-white'>12k <sup>+</sup> <br /> Projects <br /> Complete </h2>
+              <div className="bg-primary md:py-[47px] py-6 md:px-9 px-6 block absolute bottom-0 right-0">
+                <h2 className='text-[6vw] font-bold text-white'>12k <sup>+</sup> <br /> Projects <br /> Complete </h2>
               </div>
-              <div className="bg-primary py-[47px] px-9 block absolute top-5 right-0">
-                <h2 className='text-[25px] font-semibold text-white'>10<sup>+</sup> Year <br /> Experience </h2>
+              <div className="bg-primary md:py-[47px] py-6 md:px-9 px-6 block absolute top-5 right-0">
+                <h2 className='text-[5vw] font-semibold text-white'>10<sup>+</sup> Year <br /> Experience </h2>
               </div>
             </div>
           </div>
-          <div className="md:ml-16">
+          <div className="md:ml-16 mt-7">
             <div className="flex items-center gap-2">
               <h4 className='text-[22px] font-semibold text-primary'>About Us</h4>
               <div className='w-10 h-[2px] bg-primary'></div>
             </div>
-            <h3 className='xl:text-[50px] text-[40px] font-bold'>We are more than you
+            <h3 className='xl:text-[50px] text-[33px] font-bold'>We are more than you
               imagine</h3>
-            
+
             <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-14 mt-12">
               <div className="">
                 <div className="">
@@ -50,7 +50,7 @@ const AboutTwo = () => {
             <p className='text-[15px] mt-6 mb-10'>
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qofficia mollianim
               id est laborum. Sed ut perspiciatis unde omnis iste natuvoluptateaccusantium
-              Nemo enim ipsam voluptatem 
+              Nemo enim ipsam voluptatem
             </p>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
               <div className="block">

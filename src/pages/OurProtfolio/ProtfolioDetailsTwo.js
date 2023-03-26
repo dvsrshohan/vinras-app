@@ -14,8 +14,8 @@ import './portfolio.css';
 const ProtfolioDetailsTwo = () => {
   return (
     <div>
-      <StaticHero title={"Our Portfolio Details"} />
-      
+      <StaticHero title={"Portfolio Details"} />
+
       {/* {/ content /} */}
       <div className="py-12">
         <div className="container">
@@ -28,8 +28,7 @@ const ProtfolioDetailsTwo = () => {
 
             {/* {/ time line /} */}
             <div
-              className="time-line p-7 max-w-[90%] mx-auto flex items-center justify-between rounded-lg absolute bottom-0 bg-white right-0 left-0 border"
-              style={{ transform: "translateY(50%)" }}
+              className="time-line p-7 md:mt-0 mt-14 max-w-[90%] mx-auto md:flex items-center justify-between rounded-lg md:translate-y-2/4	translate-y-0 lg:absolute bottom-0 bg-white right-0 left-0 border"
             >
               <div className="time-line-items">
                 <h4>
@@ -40,6 +39,8 @@ const ProtfolioDetailsTwo = () => {
                 </h6>
               </div>
 
+              <div className='bg-[#333] md:w-[1px] w-full md:h-[80px] h-[1px] md:my-0 my-3'></div>
+
               <div className="time-line-items">
                 <h4>
                   <strong>Catagories:</strong>
@@ -49,6 +50,8 @@ const ProtfolioDetailsTwo = () => {
                 </h6>
               </div>
 
+              <div className='bg-[#333] md:w-[1px] w-full md:h-[80px] h-[1px] md:my-0 my-3'></div>
+
               <div className="time-line-items">
                 <h4>
                   <strong>Date:</strong>
@@ -57,6 +60,8 @@ const ProtfolioDetailsTwo = () => {
                   16 May 2021
                 </h6>
               </div>
+
+              <div className='bg-[#333] md:w-[1px] w-full md:h-[80px] h-[1px] md:my-0 my-3'></div>
 
               <div>
                 <ul className={`flex items-center justify-between`}>
@@ -123,7 +128,7 @@ const ProtfolioDetailsTwo = () => {
         </div>
       </div>
 
-      <Case/>
+      <Case />
     </div>
   );
 };

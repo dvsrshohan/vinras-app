@@ -19,9 +19,9 @@ const Navbar = () => {
   const [aboutDropdown, setAboutDropdown] = useState(false);
   const [teamDropdown, setTeamDropdown] = useState(false);
   const [newsDropdown, setNewsDropdown] = useState(false);
-  const [removeNavbarFlex, setRemoveNavbarFlex] = useState(false);
+  // const [removeNavbarFlex, setRemoveNavbarFlex] = useState(false);
   const [removeShape, setRemoveShape] = useState(false);
-  const [removeDropdownMenu, setRemoveDropdownMenu] = useState(false);
+  // const [removeDropdownMenu, setRemoveDropdownMenu] = useState(false);
   const [mainMenuToggle, setMainMenuToggle] = useState(false);
   const [navScroll, setNavScroll] = useState("");
   // const location = useLocation();
@@ -49,33 +49,63 @@ const Navbar = () => {
 
   const handleHomeDropdown = () => {
     setHomeDropdown(!homeDropdown);
+    setPagesDropdown(false)
+    setServicesDropdown(false)
+    setAboutDropdown(false)
+    setTeamDropdown(false)
+    setNewsDropdown(false)
   };
   const handlePagesDropdown = () => {
     setPagesDropdown(!pagesDropdown);
+    setHomeDropdown(false)
+    setServicesDropdown(false)
+    setAboutDropdown(false)
+    setTeamDropdown(false)
+    setNewsDropdown(false)
   };
   const handleServicesDropdown = () => {
     setServicesDropdown(!servicesDropdown);
+    setHomeDropdown(false)
+    setPagesDropdown(false)
+    setAboutDropdown(false)
+    setTeamDropdown(false)
+    setNewsDropdown(false)
   };
   const handleAboutDropdown = () => {
     setAboutDropdown(!aboutDropdown);
+    setHomeDropdown(false)
+    setPagesDropdown(false)
+    setServicesDropdown(false)
+    setTeamDropdown(false)
+    setNewsDropdown(false)
   };
   const handleTeamDropdown = () => {
     setTeamDropdown(!teamDropdown);
+    setHomeDropdown(false)
+    setPagesDropdown(false)
+    setServicesDropdown(false)
+    setAboutDropdown(false)
+    setNewsDropdown(false)
   };
 
   const handleNewsDropdown = () => {
     setNewsDropdown(!newsDropdown);
+    setHomeDropdown(false)
+    setPagesDropdown(false)
+    setServicesDropdown(false)
+    setAboutDropdown(false)
+    setTeamDropdown(false)
   };
 
   const handleMainMenu = () => {
     setMainMenuToggle(!mainMenuToggle);
   };
 
-  useEffect(() => {
-    if (window.innerWidth <= 1024) {
-      setRemoveNavbarFlex("flex-remove");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.innerWidth <= 1024) {
+  //     setRemoveNavbarFlex("flex-remove");
+  //   }
+  // }, []);
 
   useEffect(() => {
     if (window.innerWidth <= 1024) {
@@ -83,11 +113,11 @@ const Navbar = () => {
     }
   }, []);
 
-  useEffect(() => {
-    if (window.innerWidth <= 1024) {
-      setRemoveDropdownMenu("home-dropdown-ab");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.innerWidth <= 1024) {
+  //     setRemoveDropdownMenu("home-dropdown-ab");
+  //   }
+  // }, []);
 
   return (
     <div>
@@ -99,7 +129,7 @@ const Navbar = () => {
             {/* {/ off canvas dropdown /} */}
             <div className="block lg:hidden sticky top-0">
               <div className="flex justify-between items-center">
-                <div className="flex items-center justify-start navbar-brand">
+                <div className="flex items-center bg-primary py-5 pr-6 justify-start navbar-brand">
                   <img
                     src="/images/logo.png"
                     alt="logo"
@@ -117,7 +147,7 @@ const Navbar = () => {
             <div className="hidden lg:block">
               <div className="flex items-center justify-between">
                 {/* {/ navbar logo /} */}
-                <div className="flex items-center justify-start navbar-brand">
+                <div className="flex items-center bg-primary h-full pr-5 pt-7 pb-7 justify-start navbar-brand">
                   <img
                     src="/images/logo.png"
                     alt="logo"
@@ -168,8 +198,8 @@ const Navbar = () => {
 
                       <IoSearchOutline
                         className={` absolute left-0 mx-4 cursor-pointer bg-white z-10 ${navbarSearch
-                            ? "right-0"
-                            : "right-0 navbar-search-icons-toggle"
+                          ? "right-0"
+                          : "right-0 navbar-search-icons-toggle"
                           }`}
                       />
                     </div>
@@ -320,7 +350,7 @@ const Navbar = () => {
                         onMouseUp={handleTeamDropdown}
                       >
                         Team{" "}
-                        {aboutDropdown ? <CgMathMinus /> : <CgMathPlus />}
+                        {teamDropdown ? <CgMathMinus /> : <CgMathPlus />}
                       </NavLink>
                       {/* {/ Services dropdown menu /} */}
                       <div
@@ -399,14 +429,14 @@ const Navbar = () => {
         {/* {/ =========================OF CANVAS MENU========================== /} */}
         <div
           className={`block lg:hidden off-canvas-menu ${mainMenuToggle ? "main-menu-toggle-class" : ""
-            } bg-orange-600 lg:bg-none ${removeShape ? "" : "navbar-left-shape"}`}
+            } bg-primary lg:bg-none ${removeShape ? "" : "navbar-left-shape"}`}
         >
           <div className="vinras-container">
             <div className="">
               {/* {/ navbar logo /} */}
-              <div className="flex items-center justify-start navbar-brand">
+              <div className="flex items-center bg-primary justify-start navbar-brand">
                 <img
-                  src="../images/nav-logo.png"
+                  src="/images/logo.png"
                   alt="logo"
                   className="w-[35px] mr-2"
                 />
@@ -455,8 +485,8 @@ const Navbar = () => {
 
                     <IoSearchOutline
                       className={` absolute left-0 mx-4 cursor-pointer bg-white z-10 ${navbarSearch
-                          ? "right-0"
-                          : "right-0 navbar-search-icons-toggle"
+                        ? "right-0"
+                        : "right-0 navbar-search-icons-toggle"
                         }`}
                     />
                   </div>
@@ -465,65 +495,90 @@ const Navbar = () => {
 
               {/* {/ navbar /} */}
               <div className="navbar-wrap mt-12 lg:mt-0">
-                <ul className={` ${removeNavbarFlex ? "" : "navbar-nav"}`}>
-                  <li
-                    className={`nav-items relative  ${homeDropdown
-                        ? "toggle-dropdown-active"
-                        : "toggle-dropdown-off"
-                      }`}
-                  >
+                <ul className="flex-remove">
+                  <li className="nav-items relative">
                     <NavLink
-                      className="nav-links flex mr-4 justify-start lg:justify-between items-center"
+                      className={`nav-links flex justify-between items-center gap-3`}
                       to="/"
-                      onMouseOver={handleHomeDropdown}
-                      // onClick={handleHomeDropdown}
+                      onMouseUp={handleHomeDropdown}
                     >
                       Home {homeDropdown ? <CgMathMinus /> : <CgMathPlus />}
                     </NavLink>
                     {/* {/ home dropdown menu /} */}
                     <div
-                      className={`${removeDropdownMenu ? "" : "home-dropdown-ab"
-                        } ${newsDropdown ? "home-dropdown-toggle" : ""}`}
+                      className={`home-dropdown ${homeDropdown ? "home-dropdown-toggle" : ""
+                        }`}
                     >
-                      <ul className={`triangle-top dropdown-text bg-white`}>
+                      <ul className="triangle-top dropdown-text bg-white">
                         <li className="nav-items">
                           <Link className="nav-links" to="/">
                             home 1
                           </Link>
                         </li>
-                        <li className="nav-items">
-                          <Link className="nav-links" to="/home">
+                        <li>
+                          <Link className="nav-links" to="/homeTwo">
                             home 2
                           </Link>
                         </li>
                       </ul>
                     </div>
                   </li>
-                  <li className={`nav-items ${homeDropdown ? "mt-0" : "mt-6"}`}>
-                    <NavLink className="nav-links" href="/page">
-                      page
-                    </NavLink>
+                  <li className="nav-items relative">
+                    <p
+                      className={`nav-links flex justify-between cursor-pointer items-center gap-3`}
+                      onMouseUp={handlePagesDropdown}
+                    >
+                      Page {pagesDropdown ? <CgMathMinus /> : <CgMathPlus />}
+                    </p>
+                    {/* {/ home dropdown menu /} */}
+                    <div
+                      className={`home-dropdown ${pagesDropdown ? "home-dropdown-toggle" : ""
+                        }`}
+                    >
+                      <ul className="triangle-top dropdown-text bg-white">
+                        <li className="nav-items">
+                          <Link className="nav-links" to="/mission">
+                            Mission
+                          </Link>
+                        </li>
+                        <li className="nav-items">
+                          <Link className="nav-links" to="/portfolio">
+                            Portfolio
+                          </Link>
+                        </li>
+                        <li className="nav-items">
+                          <Link className="nav-links" to="/portfolio-2">
+                            Portfolio 2
+                          </Link>
+                        </li>
+                        <li className="nav-items">
+                          <Link className="nav-links" to="/portfolio-details">
+                            Portfolio Details
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className="nav-links" to="/portfolio-details-2">
+                            Portfolio Details 2
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
-                  <li
-                    className={`nav-items relative ${servicesDropdown
-                        ? "toggle-dropdown-active"
-                        : "toggle-dropdown-off"
-                      }`}
-                  >
+                  <li className="nav-items relative">
                     <NavLink
-                      className="nav-links flex mr-4 justify-start lg:justify-between items-center"
+                      className="nav-links flex justify-between items-center gap-3"
                       to="/services"
-                      onClick={handleServicesDropdown}
+                      onMouseUp={handleServicesDropdown}
                     >
                       Services{" "}
                       {servicesDropdown ? <CgMathMinus /> : <CgMathPlus />}
                     </NavLink>
                     {/* {/ Services dropdown menu /} */}
                     <div
-                      className={`${removeDropdownMenu ? "" : "home-dropdown-ab"
-                        } ${newsDropdown ? "home-dropdown-toggle" : ""}`}
+                      className={`home-dropdown ${servicesDropdown ? "home-dropdown-toggle" : ""
+                        }`}
                     >
-                      <ul className={`triangle-top dropdown-text bg-white`}>
+                      <ul className="triangle-top dropdown-text bg-white">
                         <li className="nav-items">
                           <Link className="nav-links" to="/services">
                             Services
@@ -534,54 +589,105 @@ const Navbar = () => {
                             Services 2
                           </Link>
                         </li>
+                        <li className="nav-items">
+                          <Link className="nav-links" to="/services-details">
+                            Services Details
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className="nav-links" to="/services-details-2">
+                            Services Details 2
+                          </Link>
+                        </li>
                       </ul>
                     </div>
                   </li>
-                  <li
-                    className={`nav-items ${servicesDropdown ? "mt-0" : "mt-6"
-                      }`}
-                  >
-                    <NavLink className="nav-links" href="/team">
-                      Team
-                    </NavLink>
-                  </li>
-                  <li
-                    className={`nav-items relative ${newsDropdown
-                        ? "toggle-dropdown-active"
-                        : "toggle-dropdown-off"
-                      }`}
-                  >
+                  <li className="nav-items relative">
                     <NavLink
-                      className="nav-links flex mr-4 justify-start lg:justify-between items-center"
-                      href="/blog"
-                      onClick={handleNewsDropdown}
+                      className="nav-links flex justify-between items-center gap-3"
+                      to="/about"
+                      onMouseUp={handleAboutDropdown}
+                    >
+                      About{" "}
+                      {aboutDropdown ? <CgMathMinus /> : <CgMathPlus />}
+                    </NavLink>
+                    {/* {/ Services dropdown menu /} */}
+                    <div
+                      className={`home-dropdown ${aboutDropdown ? "home-dropdown-toggle" : ""
+                        }`}
+                    >
+                      <ul className="triangle-top dropdown-text bg-white">
+                        <li className="nav-items">
+                          <Link className="nav-links" to="/about">
+                            About Us 1
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className="nav-links" to="/about-2">
+                            About Us 2
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="nav-items relative">
+                    <NavLink
+                      className="nav-links flex justify-between items-center gap-3"
+                      to="/team"
+                      onMouseUp={handleTeamDropdown}
+                    >
+                      Team{" "}
+                      {teamDropdown ? <CgMathMinus /> : <CgMathPlus />}
+                    </NavLink>
+                    {/* {/ Services dropdown menu /} */}
+                    <div
+                      className={`home-dropdown ${teamDropdown ? "home-dropdown-toggle" : ""
+                        }`}
+                    >
+                      <ul className="triangle-top dropdown-text bg-white">
+                        <li className="nav-items">
+                          <Link className="nav-links" to="/team">
+                            Team
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className="nav-links" to="/team-details">
+                            Team Details
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="nav-items relative">
+                    <NavLink
+                      className="nav-links flex justify-between items-center gap-3"
+                      to="/blog"
+                      onMouseUp={handleNewsDropdown}
                     >
                       News {newsDropdown ? <CgMathMinus /> : <CgMathPlus />}
                     </NavLink>
-
                     {/* {/ News dropdown menu /} */}
-
                     <div
-                      className={`${removeDropdownMenu ? "" : "home-dropdown-ab"
-                        } ${newsDropdown ? "home-dropdown-toggle" : ""}`}
+                      className={`home-dropdown ${newsDropdown ? "home-dropdown-toggle" : ""
+                        }`}
                     >
-                      <ul className={`triangle-top dropdown-text bg-white`}>
+                      <ul className="triangle-top dropdown-text bg-white">
                         <li className="nav-items">
-                          <Link className="nav-links" to="/data">
-                            home 2
+                          <Link className="nav-links" to="/blog">
+                            blog
                           </Link>
                         </li>
-                        <li className="nav-items">
-                          <Link className="nav-links" to="/data">
-                            home 2
+                        <li>
+                          <Link className="nav-links" to="/blog-details">
+                            Blog Details
                           </Link>
                         </li>
                       </ul>
                     </div>
                   </li>
-                  <li className={`nav-items ${newsDropdown ? "mt-0" : "mt-6"}`}>
-                    <NavLink className="nav-links" to="/contact">
-                      Contact
+                  <li className="nav-items">
+                    <NavLink className="nav-links" to="/faq">
+                      FAQ
                     </NavLink>
                   </li>
                 </ul>
